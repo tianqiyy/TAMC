@@ -4,7 +4,7 @@ TAMC (Transcriptional factor binding prediction from ATAC-seq profile at Motif-p
 
 
 ## Prerequisites
-Python (3.6); Numpy; pyBigWig; pysam; pandas; PyTorch; scipy.stats; math; [reg-gen](https://github.com/CostaLab/reg-gen)
+Python (3.6); Numpy; pyBigWig; pysam; pandas; PyTorch; scipy.stats; math; [reg-gen](https://github.com/CostaLab/reg-gen);
 
 
 ## Clone the repository
@@ -37,5 +37,21 @@ $ python train.py --modelname default \
                   --learnrate 0.0001 \
                   --trainrecorddir training_record_directory \
                   --bestmodeldir bestmodel_record_directory \
+                  --prefix file_name_prefix_string
+```
+
+### Make predictions of binding probability
+```
+$ python train.py --modelname default \
+                  --refgenome reference_genome_directory \
+                  --atac_bam atac-seq.bam \
+                  --TOBIAS_FPS_bw TOBIAS_footprint_score.bigwig \
+                  --mpbs_bed mpbs.bed \
+                  --biastable_F none_bias_table_F.txt \
+                  --biastable_R none_bias_table_R.txt \
+                  --bestmodel1 best_trained_model_1.pt \
+                  --bestmodel2 best_trained_model_2.pt \
+                  --bestmodel3 best_trained_model_3.pt \
+                  --outdir output_directory \
                   --prefix file_name_prefix_string
 ```

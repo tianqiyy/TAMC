@@ -29,8 +29,24 @@ parser.add_argument("--reverse_shift", type=int, metavar="INT", default=-4, help
 
 args = parser.parse_args()
 
-if args.modelname == "no_cleavage_profile":
-    if args.TOBIAS_FDS_bw is None:
-        print("TOBIAS_FDS_bw has not been set")
+if args.modelname == "default":
+    if args.refgenome is None:
+        print("refgenome has not been set")
+    elif args.atac_bam is None:
+        print("atac_bam has not been set")
+    elif args.TOBIAS_FPS_bw is None:
+        print("TOBIAS_FPS_bw has not been set")
+    elif args.mpbs_bed is None:
+        print("mpbs_bed has not been set")
+    elif args.biastable_F is None:
+        print("biastable_F has not been set")
+    elif args.biastable_R is None:
+        print("biastable_R has not been set")
+    elif args.bestmodel1 is None:
+        print("bestmodel2 has not been set")
+    elif args.bestmodel1 is None:
+        print("bestmodel2 has not been set")
+    elif args.bestmodel1 is None:
+        print("bestmodel2 has not been set")
     else:
-        predictsignalprocess.no_cleavage_profile(args.mpbs_bed, args.TOBIAS_FDS_bw, args.bestmodel1, args.bestmodel2, args.bestmodel3, args.outdir, args.prefix)
+        predictsignalprocess.default(args.refgenome, args.atac_bam, args.TOBIAS_FPS_bw, args.mpbs_bed, args.biastable_F, args.biastable_R, args.bestmodel1, args.bestmodel2, args.bestmodel3, args.outdir, args.prefix)

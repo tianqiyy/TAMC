@@ -29,12 +29,6 @@ args = parser.parse_args()
 # Define model
 if args.modelname == "default":
     model = models.default()
-elif args.modelname == "no_footprint":
-    model = models.no_footprint()
-elif args.modelname == "no_strand" or args.modelname == "no_size":
-    model = models.no_strand_or_no_size()
-elif args.modelname == "no_cleavage_profile":
-    model = models.no_cleavage_profile()
 
 # Define iteration number:
 traindatanumber=len([filename for filename in os.listdir(args.traindatadir) if os.path.isfile(os.path.join(args.traindatadir, filename))])
