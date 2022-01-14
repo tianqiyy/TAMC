@@ -26,7 +26,7 @@ $ python inputsignal.py --input_format default \
                         --prefix file_name_prefix_string
 ```
 * Parameters:
-  \--TOBIAS_FPS_bw: TOBIAS_footprint_score.bigwig is generated using ATACorrect and FootprintScores tools in [TOBIAS](https://github.com/loosolab/TOBIAS)  package
+\ --TOBIAS_FPS_bw: TOBIAS_footprint_score.bigwig is generated using ATACorrect and FootprintScores tools in [TOBIAS](https://github.com/loosolab/TOBIAS)  package
 
 ### Training
 ```
