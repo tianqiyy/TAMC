@@ -13,6 +13,10 @@ TAMC (Transcriptional factor binding prediction from ATAC-seq profile at Motif-p
 
 -scipy.stats
 
+-pandas
+
+-PyTorch
+
 -[reg-gen](https://github.com/CostaLab/reg-gen)
 
 ## Clone the repository
@@ -23,7 +27,8 @@ git clone https://github.com/tianqiyy/TAMC.git
 ## Usage
 ### Prepare input signals
 ```
-$ python inputsignal.py --refgenome reference_genome_directory \
+$ python inputsignal.py --input_format default \
+                        --refgenome reference_genome_directory \
                         --atac_bam atac-seq.bam \
                         --TOBIAS_FPS_bw TOBIAS_footprint_score.bigwig \
                         --mpbs_bed mpbs.bed \
