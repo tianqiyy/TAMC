@@ -18,3 +18,18 @@ TAMC (Transcriptional factor binding prediction from ATAC-seq profile at Motif-p
 ## Clone the repository
 ```
 git clone https://github.com/tianqiyy/TAMC.git
+```
+
+## Usage
+### Prepare input signals
+```
+$ python inputsignal.py --refgenome reference_genome_directory \
+                        --atac_bam atac-seq.bam \
+                        --TOBIAS_FPS_bw TOBIAS_footprint_score.bigwig \
+                        --mpbs_bed mpbs.bed \
+                        --biastable_F none_bias_table_F.txt \
+                        --biastable_R none_bias_table_R.txt \
+                        --outdir output_directory \
+                        --prefix string
+
+```
