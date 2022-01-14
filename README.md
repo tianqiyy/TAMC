@@ -25,7 +25,7 @@ git clone https://github.com/tianqiyy/TAMC.git
 ```
 $ python inputsignal.py --refgenome reference_genome_directory \
                         --atac_bam atac-seq.bam \
-                        --TOBIAS_FPS_bw TOBIAS_footprint_score.bigwig \
+                        --TOBIAS_FPS_bw [TOBIAS_footprint_score.bigwig](https://github.com/loosolab/TOBIAS) \
                         --mpbs_bed mpbs.bed \
                         --biastable_F none_bias_table_F.txt \
                         --biastable_R none_bias_table_R.txt \
