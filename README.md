@@ -4,10 +4,15 @@ TAMC (Transcriptional factor binding prediction from ATAC-seq profile at Motif-p
 
 ## Prerequisites
 -Python (3.6)
+
 -Numpy
+
 -pyBigWig
+
 -pysam
+
 -scipy.stats
+
 -[reg-gen](https://github.com/CostaLab/reg-gen)
 
 ## Clone the repository
