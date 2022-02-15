@@ -26,7 +26,7 @@ $ python inputsignal.py --input_format default \
                         --prefix file_name_prefix_string
 ```
 
-\--TOBIAS_FPS_bw: TOBIAS_footprint_score.bigwig is generated using ATACorrect and FootprintScores tools in [TOBIAS](https://github.com/loosolab/TOBIAS)  package
+TOBIAS_FPS_bw: TOBIAS_footprint_score.bigwig is generated using ATACorrect and FootprintScores tools in [TOBIAS](https://github.com/loosolab/TOBIAS) package.
 
 ### Training
 ```
@@ -40,6 +40,8 @@ $ python train.py --modelname default \
                   --bestmodeldir bestmodel_record_directory \
                   --prefix file_name_prefix_string
 ```
+
+We have provided sample trained models for CTCF and EGR1 under the bestmodels folder.
 
 ### Make predictions of binding probability
 ```
