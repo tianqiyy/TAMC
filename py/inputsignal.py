@@ -34,4 +34,4 @@ if args.input_format == "default":
     elif args.biastable_R is None:
         print("biastable_R has not been set")
     else:
-        inputsignalprocess.default(args.refgenome, args.atac_bam, args.TOBIAS_FPS_bw, args.mpbs_bed, args.biastable_F, args.biastable_R, args.outdir, args.prefix)
+        inputsignalprocess.default(args.refgenome, args.atac_bam, args.TOBIAS_FPS_bw, args.mpbs_bed, args.biastable_F, args.biastable_R, args.forward_shift, args.reverse_shift, args.outdir, args.prefix)

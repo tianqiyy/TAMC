@@ -10,7 +10,7 @@ from rgt.GenomicRegionSet import GenomicRegionSet # HINT-ATAC code
 from rgt.HINT.biasTable import BiasTable # HINT-ATAC code
 from rgt.Util import HmmData # HINT-ATAC code
 
-def default(refgenome, atac_bam, TOBIAS_FPS_bw, mpbs_bed, biastable_F, biastable_R, outdir, prefix):
+def default(refgenome, atac_bam, TOBIAS_FPS_bw, mpbs_bed, biastable_F, biastable_R, forward_shift, reverse_shift, outdir, prefix):
     # load genome file
     fasta = Fastafile(refgenome)
 
