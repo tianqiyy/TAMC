@@ -45,7 +45,7 @@ We have provided sample trained models for CTCF and EGR1 under the bestmodels fo
 
 ### Make predictions of binding probability
 ```
-$ python train.py --modelname default \
+$ python predict.py --modelname default \
                   --refgenome reference_genome_directory \
                   --atac_bam atac-seq.bam \
                   --TOBIAS_FPS_bw TOBIAS_footprint_score.bigwig \
